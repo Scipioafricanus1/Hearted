@@ -9,7 +9,6 @@ import de.hdodenhof.circleimageview.CircleImageView
 
 class RecyclerViewAdapter( val profileList: ArrayList<Profile>) : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> () {
 
-
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         val textViewName = itemView.findViewById<TextView>(R.id.tv_profile)
         val circleImageProfile = itemView.findViewById<CircleImageView>(R.id.civ_profilePic)
