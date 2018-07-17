@@ -48,7 +48,7 @@ class Login : AppCompatActivity() {
         bLogin.setOnClickListener { view ->
 
             //if you don't have text and password filled in.
-            if (tvEmail.text.toString() == "" || tvPassword.text.toString() == "") {
+            if (tvEmail.text.toString().trim() == "" || tvPassword.text.toString() == "") {
                 Toast.makeText(this, "No email or password entered", Toast.LENGTH_LONG).show()
             }
             else {
@@ -69,7 +69,7 @@ class Login : AppCompatActivity() {
         }
     }
 
-    fun jumpToHeartViews() {
+    private fun jumpToHeartViews() {
         val intent = Intent(this, HeartViews::class.java)
         startActivity(intent)
     }

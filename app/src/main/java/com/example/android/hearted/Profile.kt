@@ -1,4 +1,4 @@
 package com.example.android.hearted
 
 
-data class Profile(val profileName: String, val profilePicture: String)
+data class Profile(val profileId: String, val profileName : String)

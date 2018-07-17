@@ -7,13 +7,41 @@
     tools:context=".HeartViews">
 
     <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:id="@+id/rv_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="5dp"
-        >
+        android:padding="5dp"> </android.support.v7.widget.RecyclerView>
 
-    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:id="@+id/tvFavorites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/cardview_dark_background"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/star"
+        android:paddingBottom="5dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp"
+        android:paddingTop="5dp"
+        android:text="Favorites"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/rv_profile" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rec_view_FavoritesList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFavorites" />
+
 
 </android.support.constraint.ConstraintLayout>

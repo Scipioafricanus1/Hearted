@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
 
         signUp.setOnClickListener { view ->
             //if all fields have text and passwords are equal.
-            if(email.text.toString() == "" || password.text.toString() == "" || confirmPassword.text.toString() == "") {
+            if(email.text.toString().trim() == "" || password.text.toString() == "" || confirmPassword.text.toString() == "") {
                 Toast.makeText(this, "No email or password entered", Toast.LENGTH_LONG).show()
             } else if ( password.text.toString() != confirmPassword.text.toString()) {
                 Toast.makeText(this, "Passwords are not the same", Toast.LENGTH_LONG).show()
