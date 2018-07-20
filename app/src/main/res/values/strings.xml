@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Hearted</string>
+    <string name="sendbutton">SendButton</string>
 </resources>

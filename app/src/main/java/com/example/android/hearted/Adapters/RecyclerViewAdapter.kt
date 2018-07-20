@@ -1,10 +1,12 @@
-package com.example.android.hearted
+package com.example.android.hearted.Adapters
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import com.example.android.hearted.Profile
+import com.example.android.hearted.R
 import de.hdodenhof.circleimageview.CircleImageView
 
 class RecyclerViewAdapter( val profileList: ArrayList<Profile>) : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> () {
